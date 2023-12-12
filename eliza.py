@@ -41,11 +41,71 @@ def eliza_chatbot():
                 "Did you come to me because you are %1?",
                 "How long have you been %1?",
                 "How do you feel about being %1?"
-            ],    
+            ],   
+
+            r"How do I (.*)\??": [ #1
+                "Have you ever tried to %1?",
+                "Why do you want to %1?",
+                "What would you do after you %1?"
+            ],
+
+            r"Is it fun to (.*)\??": [ #2
+                "Perhaps it is, you should try to %1",
+                "Not sure, I have never tried to %1",
+                "Yes absolutely! I love to %1"
+            ],
+
+            r"What happens when we (.*)\??": [ #3
+                "It is a great mystery what happens when we %1",
+                "I am certain when we %1, it is the best",
+                "Life continues all the same when we %1"
+            ],
+
+            r"Is it possible to (.*)\??": [ #4
+                "Of course its possible to %1",
+                "Certainly not, it's impossible to %1",
+                "Why do you want to %1?"
+            ],
+
+            r"I don't know if I should (.*)": [ #5
+                "Why are you uncertain if you should %1?",
+                "Why do you think you should %1?",
+                "What would your family and friends think if you did %1"
+            ],
+
+            r"I'm addicted to (.*)": [ #6
+                "What do you feel when you do %1?",
+                "Do you feel guilt or pleasure when you do %1",
+                "Perhaps seek a therapist to stop doing %1"
+            ],
+
+            r"Help me I am scared of (.*)": [ #7
+                "Why are you scared of %1?",
+                "Have you tried seeking protection from %1",
+                "What happened the last time you encountered %1"
+            ],
+
+            r"Can I achieve (.*)\??": [ #8
+                "Why do you want to achieve %1?",
+                "I am certain you will achieve %1, reach for the stars",
+                "Is it your best course of action to achieve %1?"
+            ],
+
+            r"Someone stole my (.*)": [ #9
+                "Have you called the police to help get back your %1?",
+                "You should have gotten security to protect your %1",
+                "How important is your %1 to you?"
+            ],
+
+            r"My friends want me to (.*)": [ #10
+                "Do you want to %1 with your friends?",
+                "Have your friends wanted you to %1 before?",
+                "It is up to you to decide if you want to %1"
+            ]
+
 
             # Add more patterns here
-            
-
+        
             
         }
 
